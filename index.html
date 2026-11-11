@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--******** CSS External*****-->
+    <link rel="stylesheet" href="./index.css" />
+    <!--******** CSS Internal ******-->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+      button{
+        cursor: pointer;
+      }
+      #subscribe {
+              background-color: #cc0000;
+              color: white;
+              text-transform: uppercase;
+              font-size: 14px;
+              border: none;
+              border-radius: 2px;
+              padding: 10px 16px;
+              font-weight: 500;
+              display: inline-block;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            #subscribe:hover {
+              opacity: 0.7;
+            }
+            #join {
+              margin-left: 10px;
+              padding: 10px 15px 9px 15px;
+              font-weight: 100;
+              text-transform: uppercase;
+              background-color: white;
+              border: 1px solid;
+              color: rgb(6, 95, 212);
+              border-radius: 2px;
+              transition: color 0.25s; background-color 0.25s;
+            }
+            #join:hover{
+              background-color: rgb(6, 95, 212);
+              color: white;
+            }
+            #tweet {
+              background-color: rgb(29, 155, 240);
+              color: white;
+              border: none;
+              padding: 7px 16px;
+              border-radius: 50px;
+              text-transform: capitalize;
+              margin-left: 10px;
+              font-size: 16px;
+              font-weight: 500;
+              font-family: "Roboto", sans-serif;
+            }
+            #tweet:hover {
+                box-shadow: rgb(0, 0, 0, 0.091) 0px 14px 28px, rgb(0, 0, 0, 0.114) 0px 10px 10px;
+            }
+    </style>
+  </head>
+  <body>
+    <button id="subscribe">subscribe</button>
+    <button id="join">join</button>
+    <button id="tweet">tweet</button>
+  </body>
+</html>

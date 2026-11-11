@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="./images/bootstrap-brands-solid1.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/c975a571ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./Bootstrap.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Store</title>
+  </head>
+  <body>
+    <!--********************** Navbar ********************** -->
+    <nav class="navbar md:navbar-expand bg-1">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="btn-icon navbar-toggler"
+          type="button"
+          data-bs-toggle="drawer"
+          data-bs-target="#navbarDrawer"
+          aria-controls="navbarDrawer"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog
+          class="drawer drawer-end"
+          tabindex="-1"
+          id="navbarDrawer"
+          aria-labelledby="navbarDrawerLabel"
+        >
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="drawer"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="drawer-body mb-2 md:mb-0">
+            <ul class="nav navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link"
+                  type="button"
+                  data-bs-toggle="menu"
+                  aria-expanded="false"
+                >
+                  Menu
+                </button>
+                <div class="menu">
+                  <a class="menu-item" href="#">Action</a>
+                  <a class="menu-item" href="#">Another action</a>
+                  <hr class="menu-divider" />
+                  <a class="menu-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="hstack gap-2" role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn-solid btn-icon theme-secondary" type="submit">
+                <i
+                  class="fa-brands fa-sistrix"
+                  style="color: rgb(78, 104, 152)"
+                ></i>
+              </button>
+            </form>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+    <!--********************** Hero Section ********************** -->
+    <section
+      class="hero-section bg-subtle-secondary border rounded p-5 container mt-10 d-flex flex-column-reverse gap-4 md:flex-row align-items-center justify-content-center"
+    >
+      <div class="text-center md:text-start">
+        <h1>Welcome to my Bootstrap Component's store</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minus,
+          sint veritatis nulla aliquid deserunt! Rem deleniti iste facere,
+          architecto beatae accusamus possimus dolorem cupiditate laboriosam
+          magni et tempora iusto.
+        </p>
+        <div>
+          <button class="btn-solid theme-primary">Get started</button>
+          <button class="btn-outline theme-primary">Learn more</button>
+        </div>
+      </div>
+      <img class="w-75" src="./images/bootstrap-stack.png" alt="main-image" />
+    </section>
+    <!--********************** Products Section ********************** -->
+    <h1 class="text-center my-12 fg-primary">My Products</h1>
+    <section
+      class="bg-subtle-secondary container my-12 p-5 rounded border d-flex flex-wrap justify-content-center gap-12"
+    >
+      <section class="card" style="max-width: 320px">
+        <img
+          src="./images/bootstrap-brands-solid.png"
+          class="card-img-top"
+          style="width: 320px"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4 class="card-title">Card 1</h4>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+        </div>
+      </section>
+      <section class="card" style="max-width: 320px">
+        <img
+          src="./images/bootstrap-brands-solid.png"
+          class="card-img-top"
+          style="width: 320px"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+        </div>
+      </section>
+      <section class="card" style="max-width: 320px">
+        <img
+          src="./images/bootstrap-brands-solid.png"
+          class="card-img-top"
+          style="width: 320px"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+        </div>
+      </section>
+      <section class="card" style="max-width: 320px">
+        <img
+          src="./images/bootstrap-brands-solid.png"
+          class="card-img-top"
+          style="width: 320px"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+        </div>
+      </section>
+      <section class="card" style="max-width: 320px">
+        <img
+          src="./images/bootstrap-brands-solid.png"
+          class="card-img-top"
+          style="width: 320px"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+        </div>
+      </section>
+      <section class="card" style="max-width: 320px">
+        <img
+          src="./images/bootstrap-brands-solid.png"
+          class="card-img-top"
+          style="width: 320px"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+        </div>
+      </section>
+    </section>
+    <!--********************** Contact Section ********************** -->
+    <h1 class="text-center my-12 fg-primary">Contact me</h1>
+    <section
+      class="bg-subtle-secondary container my-12 p-5 rounded border d-flex justify-content-center gap-12 flex-wrap align-items-center"
+    >
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.707121465879!2d10.19565982032338!3d36.84948975776411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd356e8e6e4fc1%3A0x4f0d09978642a9d8!2sGOMYCODE%20Centre%20Urbain%20Nord!5e0!3m2!1sen!2stn!4v1793829320738!5m2!1sen!2stn"
+        width="500"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+      <form class="flex-grow-1">
+        <div class="mb-3">
+          <label for="exampleInputFirst" class="form-label">First Name</label>
+          <input
+            placeholder="Malek"
+            type="text"
+            class="form-control"
+            id="exampleInputFirst"
+            aria-describedby="FirstHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputLast" class="form-label">Last Name</label>
+          <input
+            placeholder="Mahjoub"
+            type="text"
+            class="form-control"
+            id="exampleInputLast"
+            aria-describedby="LastHelp"
+          />
+        </div>
+        <div class="form-field">
+          <label for="fieldTextarea" class="form-label">Message</label>
+          <textarea class="form-control" id="fieldTextarea" rows="3"></textarea>
+          <div class="form-text mb-3">Be sure to include relevant details.</div>
+        </div>
+        <button type="submit" class="btn-solid theme-primary">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
